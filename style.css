@@ -207,21 +207,20 @@ body {
 	font-weight: bold;
 	font-size: 1.15em;
 	border-radius: 8px;
-	margin: 2px 0;
+	margin: 2px 12px;
 	letter-spacing: 0.5px;
 }
 .day {
 	text-align: center;
-			padding: 20px 16px;
-			border-radius: 10px;
-			cursor: pointer;
-			font-size: 1.25em;
-			transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-			border: 2px solid transparent;
-			background: #ede7f6;
-			color: #222;
-			font-weight: 500;
-			margin: 2px 0;
+	padding: 20px 16px;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 1.25em;
+	transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+	border: 2px solid transparent;
+	background: #ede7f6;
+	color: #222;
+	font-weight: 500;
 }
 .day.today {
 	background: linear-gradient(135deg, #3949ab 60%, #8e24aa 100%);
@@ -411,5 +410,6 @@ body {
     font-size: 0.9em;
     padding: 6px 0;
     border-radius: 5px;
+	margin: 2px -1.5px;
   }
 }
