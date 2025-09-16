@@ -15,86 +15,19 @@
   box-sizing: border-box; /* penting supaya width/height tetap 1080x1350 */
 }
 
-
 /* Equalizer animated background */
 html, body {
   overflow-x: hidden;
 }
 
-/* Equalizer background fix */
-.equalizer-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;   /* sebelumnya 100vw yang bikin nambah scrollbar */
-  height: 100vh;
-  z-index: -999;
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.equalizer-bar {
-	position: absolute;
-	bottom: 0;
-	width: 12px;
-	border-radius: 8px 8px 0 0;
-	opacity: 0.16;
-	animation: eqbar 1.2s infinite ease-in-out alternate;
-	background: linear-gradient(180deg, #fff 0%, #8e24aa 100%);
-	box-shadow: 0 0 16px 2px #8e24aa55, 0 0 8px 0 #fff3;
-	mix-blend-mode: lighten;
-}
-@keyframes eqbar {
-	0% { height: 12%; }
-	20% { height: 60%; }
-	40% { height: 30%; }
-	60% { height: 80%; }
-	80% { height: 40%; }
-	100% { height: 90%; }
-}
-/* Bar individual delays, width, color, and position for uniqueness */
-.equalizer-bar.bar1 { left: 4vw;  animation-delay: 0s;    background: linear-gradient(180deg, #fff 0%, #8e24aa 100%); }
-.equalizer-bar.bar2 { left: 7vw;  animation-delay: 0.15s; background: linear-gradient(180deg, #fff 0%, #3949ab 100%); }
-.equalizer-bar.bar3 { left: 10vw; animation-delay: 0.3s;  background: linear-gradient(180deg, #fff 0%, #6a1b9a 100%); }
-.equalizer-bar.bar4 { left: 13vw; animation-delay: 0.1s;  background: linear-gradient(180deg, #fff 0%, #7e57c2 100%); }
-.equalizer-bar.bar5 { left: 16vw; animation-delay: 0.25s; background: linear-gradient(180deg, #fff 0%, #ce93d8 100%); }
-.equalizer-bar.bar6 { left: 19vw; animation-delay: 0.4s;  background: linear-gradient(180deg, #fff 0%, #283593 100%); }
-.equalizer-bar.bar7 { left: 22vw; animation-delay: 0.2s;  background: linear-gradient(180deg, #fff 0%, #512da8 100%); }
-.equalizer-bar.bar8 { left: 25vw; animation-delay: 0.35s; background: linear-gradient(180deg, #fff 0%, #9575cd 100%); }
-.equalizer-bar.bar9 { left: 28vw; animation-delay: 0.05s; background: linear-gradient(180deg, #fff 0%, #b388ff 100%); }
-.equalizer-bar.bar10 { left: 31vw; animation-delay: 0.18s; background: linear-gradient(180deg, #fff 0%, #8e24aa 100%); }
-.equalizer-bar.bar11 { left: 34vw; animation-delay: 0.32s; background: linear-gradient(180deg, #fff 0%, #3949ab 100%); }
-.equalizer-bar.bar12 { left: 37vw; animation-delay: 0.12s; background: linear-gradient(180deg, #fff 0%, #6a1b9a 100%); }
-.equalizer-bar.bar13 { left: 40vw; animation-delay: 0.27s; background: linear-gradient(180deg, #fff 0%, #7e57c2 100%); }
-.equalizer-bar.bar14 { left: 43vw; animation-delay: 0.42s; background: linear-gradient(180deg, #fff 0%, #ce93d8 100%); }
-.equalizer-bar.bar15 { left: 46vw; animation-delay: 0.22s; background: linear-gradient(180deg, #fff 0%, #283593 100%); }
-.equalizer-bar.bar16 { left: 49vw; animation-delay: 0.37s; background: linear-gradient(180deg, #fff 0%, #512da8 100%); }
-.equalizer-bar.bar17 { left: 52vw; animation-delay: 0.09s; background: linear-gradient(180deg, #fff 0%, #9575cd 100%); }
-.equalizer-bar.bar18 { left: 55vw; animation-delay: 0.24s; background: linear-gradient(180deg, #fff 0%, #b388ff 100%); }
-.equalizer-bar.bar19 { left: 58vw; animation-delay: 0.39s; background: linear-gradient(180deg, #fff 0%, #8e24aa 100%); }
-.equalizer-bar.bar20 { left: 61vw; animation-delay: 0.14s; background: linear-gradient(180deg, #fff 0%, #3949ab 100%); }
-.equalizer-bar.bar21 { left: 64vw; animation-delay: 0.29s; background: linear-gradient(180deg, #fff 0%, #6a1b9a 100%); }
-.equalizer-bar.bar22 { left: 67vw; animation-delay: 0.11s; background: linear-gradient(180deg, #fff 0%, #7e57c2 100%); }
-.equalizer-bar.bar23 { left: 70vw; animation-delay: 0.26s; background: linear-gradient(180deg, #fff 0%, #ce93d8 100%); }
-.equalizer-bar.bar24 { left: 73vw; animation-delay: 0.41s; background: linear-gradient(180deg, #fff 0%, #283593 100%); }
-.equalizer-bar.bar25 { left: 76vw; animation-delay: 0.21s; background: linear-gradient(180deg, #fff 0%, #512da8 100%); }
-.equalizer-bar.bar26 { left: 79vw; animation-delay: 0.36s; background: linear-gradient(180deg, #fff 0%, #9575cd 100%); }
-.equalizer-bar.bar27 { left: 82vw; animation-delay: 0.08s; background: linear-gradient(180deg, #fff 0%, #b388ff 100%); }
-.equalizer-bar.bar28 { left: 85vw; animation-delay: 0.23s; background: linear-gradient(180deg, #fff 0%, #8e24aa 100%); }
-.equalizer-bar.bar29 { left: 88vw; animation-delay: 0.38s; background: linear-gradient(180deg, #fff 0%, #3949ab 100%); }
-.equalizer-bar.bar30 { left: 91vw; animation-delay: 0.13s; background: linear-gradient(180deg, #fff 0%, #6a1b9a 100%); }
-/* Reset some default styles */
-* {
-	box-sizing: border-box;
-}
 body {
 	font-family: 'Segoe UI', Arial, sans-serif;
 	margin: 0;
-		min-height: 100vh;
-		background: linear-gradient(135deg, #1a237e 0%, #6a1b9a 100%);
-		color: #fff;
-		overflow-x: hidden;
-		overflow-y: hidden; /* lock desktop scrolling */
+	min-height: 100vh;
+	background: linear-gradient(135deg, #1a237e 0%, #6a1b9a 100%);
+	color: #fff;
+	overflow-x: hidden;
+	overflow-y: hidden; /* lock desktop scrolling */
 }
 
 .main-title {
@@ -130,6 +63,23 @@ body {
 		gap: 32px;
 		width: 100%;
 		box-sizing: border-box;
+}
+.credits {
+	margin-top: auto;
+	text-align: center;
+	font-size: 0.9em;
+	color: #fff;
+	opacity: 0.85;
+	text-shadow: 0 1px 6px #0008;
+	padding-top: 12px;
+}
+.credits a {
+	color: #f9fd02;
+	text-decoration: none;
+	font-weight: 600;
+}
+.credits a:hover {
+	text-decoration: underline;
 }
 .calendar {
 	/* width: 380px;
@@ -223,6 +173,7 @@ body {
 	height: auto;
 	aspect-ratio: 1 / 1;
 	line-height: 1;
+	position: relative;
 }
 .day.today {
 	background: linear-gradient(135deg, #000a4d 60%, #bd00f1 100%);
@@ -230,16 +181,43 @@ body {
 	font-weight: bold;
 	box-shadow: 0 0 0 1.5px #8e24aa55;
 }
+/* Pin indicator for current day (small map-pin: head + tail) */
+.day.today::before {
+	content: "";
+	position: absolute;
+	top: 4px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 8px;
+	height: 8px;
+	background: #ff1744;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	box-shadow: 0 1px 4px #0006;
+}
+.day.today::after {
+	content: "";
+	position: absolute;
+	top: 12px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 6px solid #ff1744;
+}
+
 .day:hover {
 	background: #b39ddb;
 	border: 2px solid #8e24aa;
 	color: #222;
 }
 .day.selected {
-	border: 2px solid #ffd54f;
-	box-shadow: 0 0 0 2px #ffd54f55;
-	background: #fffbe6;
-	color: #222;
+	background: green;
+	color: #fff;
+	font-weight: bold;
+	border: 2px solid #fff2;
 }
 .day.has-schedule {
 	background: #ff0ab8;
@@ -247,8 +225,15 @@ body {
 	border: 2px solid #fff2;
 }
 .day.has-schedule.today {
+	background: #ff0ab8;
+	color: #fff;
+	border: 2px solid #fff2;
+}
+/* Ensure selected state always shows green fill, not just border */
+.days .day.selected {
 	background: green;
 	color: #fff;
+	font-weight: bold;
 	border: 2px solid #fff2;
 }
 .empty {
@@ -435,6 +420,7 @@ body {
     gap: 12px;
     padding: 0 6px;
   }
+  .credits { font-size: 0.8em; padding-top: 8px; }
   .calendar, .schedule {
     padding: 12px 8px;
     border-radius: 12px;
