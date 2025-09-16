@@ -8,66 +8,34 @@
   <!-- Tambahkan Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Monoton&display=swap" rel="stylesheet">
 
-  <h1 class="main-title">
-    Jakarta Party Squad <span>x</span> Wildout Clubbing Schedule
-  </h1>
-
 </head>
 <body>
-  <div class="equalizer-bg">
-    <div class="equalizer-bar bar1"></div>
-    <div class="equalizer-bar bar2"></div>
-    <div class="equalizer-bar bar3"></div>
-    <div class="equalizer-bar bar4"></div>
-    <div class="equalizer-bar bar5"></div>
-    <div class="equalizer-bar bar6"></div>
-    <div class="equalizer-bar bar7"></div>
-    <div class="equalizer-bar bar8"></div>
-    <div class="equalizer-bar bar9"></div>
-    <div class="equalizer-bar bar10"></div>
-    <div class="equalizer-bar bar11"></div>
-    <div class="equalizer-bar bar12"></div>
-    <div class="equalizer-bar bar13"></div>
-    <div class="equalizer-bar bar14"></div>
-    <div class="equalizer-bar bar15"></div>
-    <div class="equalizer-bar bar16"></div>
-    <div class="equalizer-bar bar17"></div>
-    <div class="equalizer-bar bar18"></div>
-    <div class="equalizer-bar bar19"></div>
-    <div class="equalizer-bar bar20"></div>
-    <div class="equalizer-bar bar21"></div>
-    <div class="equalizer-bar bar22"></div>
-    <div class="equalizer-bar bar23"></div>
-    <div class="equalizer-bar bar24"></div>
-    <div class="equalizer-bar bar25"></div>
-    <div class="equalizer-bar bar26"></div>
-    <div class="equalizer-bar bar27"></div>
-    <div class="equalizer-bar bar28"></div>
-    <div class="equalizer-bar bar29"></div>
-    <div class="equalizer-bar bar30"></div>
-  </div>
-
-  <div class="container">
-    <div class="calendar">
-      <div class="header">
-        <button id="prev">&#10094;</button>
-        <h2 id="month-year"></h2>
-        <button id="next">&#10095;</button>
+  <div class="canvas-wrapper">
+    <h1 class="main-title">
+      JPS <span>x</span> Wildout Clubbing Schedule
+    </h1>
+    <div class="container">
+      <div class="calendar">
+        <div class="header">
+          <button id="prev">&#10094;</button>
+          <h2 id="month-year"></h2>
+          <button id="next">&#10095;</button>
+        </div>
+        <div class="weekdays">
+          <div>Min</div>
+          <div>Sen</div>
+          <div>Sel</div>
+          <div>Rab</div>
+          <div>Kam</div>
+          <div>Jum</div>
+          <div>Sab</div>
+        </div>
+        <div class="days" id="days"></div>
       </div>
-      <div class="weekdays">
-        <div>Min</div>
-        <div>Sen</div>
-        <div>Sel</div>
-        <div>Rab</div>
-        <div>Kam</div>
-        <div>Jum</div>
-        <div>Sab</div>
+      <div class="schedule" id="schedule"> 
+        <h3 id="schedule-title">Talent Schedule</h3>
+        <div id="schedule-list" class="talent-list"></div>
       </div>
-      <div class="days" id="days"></div>
-    </div>
-    <div class="schedule" id="schedule"> 
-      <h3 id="schedule-title">Talent Schedule</h3>
-      <div id="schedule-list" class="talent-list"></div>
     </div>
   </div>
   <script src="script.js"></script>
