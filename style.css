@@ -150,6 +150,8 @@ body {
 	align-items: center;
 	justify-content: center;
 	border: 2.5px solid #fff2;
+	/* unified spacing for weekdays and days grids */
+	--cal-gap: 6px;
 }
 .header {
 	display: flex;
@@ -185,9 +187,10 @@ body {
 }
 .weekdays, .days {
 	display: grid;
-	grid-template-columns: repeat(7, 1fr);
-	gap: 6px;
+	grid-template-columns: repeat(7, minmax(0, 1fr));
+	gap: var(--cal-gap);
 	text-align: center;
+	width: 100%;
 }
 .weekdays div {
 	background: #4527a0;
@@ -198,6 +201,10 @@ body {
 	border-radius: 8px;
 	margin: 0;
 	letter-spacing: 0.5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 1;
 }
 .day {
 	text-align: center;
@@ -215,6 +222,7 @@ body {
 	justify-content: center;
 	height: auto;
 	aspect-ratio: 1 / 1;
+	line-height: 1;
 }
 .day.today {
 	background: linear-gradient(135deg, #000a4d 60%, #bd00f1 100%);
@@ -440,9 +448,8 @@ body {
     width: 28px;
     height: 28px;
   }
-  .weekdays, .days {
-    gap: 4px;
-  }
+  .calendar { --cal-gap: 4px; }
+  .weekdays, .days { gap: var(--cal-gap); }
   .talent-avatar {
     width: 40px;
     height: 40px;
@@ -458,16 +465,21 @@ body {
     font-size: 0.9em;
   }
   .day {
-    font-size: 1.13em;
+    font-size: 1.05em;
     padding: 0;
     border-radius: 10px;
     aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
   }
   .weekdays div {
     font-size: 0.8em;
     padding: 4px 0;
     border-radius: 5px;
 	margin: 0;
+    line-height: 1;
   }
   .schedule h3 {
 	margin-top: 0;
