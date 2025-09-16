@@ -30,23 +30,23 @@ const jadwalData = {
     { name: "Ade Govinda & Ikmal Tobing", venue: "Midaz", avatar: "./assets/adeikmal.png" },
     { name: "Josiah", venue: "Delulu", avatar: "./assets/josiah.png" },
     { name: "Package Collective", venue: "Bengkel", avatar: "./assets/package.png" },
-    { name: "Zaleefya", venue: "Pats", avatar: "./assets/user.png" },
+    { name: "Zaleefya", venue: "Pats", avatar: "./assets/zaleefya.png" },
     { name: "Devarra", venue: "Vault", avatar: "./assets/devarra.png" },
     { name: "Acid Line Eve", venue: "Kala", avatar: "./assets/user.png" },
     { name: "Jiggy, Oggie", venue: "Kode", avatar: "./assets/user.png" },
     { name: "Hizkia, Echobee, Davva, Phatstraw", venue: "Encore", avatar: "./assets/user.png" },
-    { name: "Iara", venue: "Bo Pik", avatar: "./assets/user.png" }
+    { name: "Iara", venue: "Blackowl PIK", avatar: "./assets/user.png" }
   ],
   '2025-09-18': [
     { name: "Moskilove", venue: "Blackowl PIK", avatar: "./assets/moskilove.png" },
     { name: "Ronald 3D", venue: "Blackowl Serpong", avatar: "./assets/ronald3d.png" },
     { name: "For Revenge", venue: "Helens TJ Duren", avatar: "./assets/user.png" },
-    { name: "Adnan Veron", venue: "W Gatsu", avatar: "./assets/user.png" },
-    { name: "Dinar Candy", venue: "Ambyar Senopati", avatar: "./assets/user.png" },
-    { name: "Billy Taner", venue: "Lil Qbig", avatar: "./assets/user.png" },
+    { name: "Adnan Veron", venue: "W Gatsu", avatar: "./assets/adnanveron.png" },
+    { name: "Dinar Candy", venue: "Ambyar Senopati", avatar: "./assets/dinarcandy.png" },
+    { name: "Billy Taner", venue: "Lil Qbig", avatar: "./assets/billytanner.png" },
     { name: "Yaya", venue: "Livehouse Qbig", avatar: "./assets/user.png" },
-    { name: "Aloy", venue: "Big Brother Kemang", avatar: "./assets/user.png" },
-    { name: "Ada Band", venue: "Noya", avatar: "./assets/user.png" },
+    { name: "Aloy", venue: "Big Brother Kemang", avatar: "./assets/aloy.png" },
+    { name: "Ada Band", venue: "Noya", avatar: "./assets/adaband.png" },
     { name: "Echobee", venue: "Zoo", avatar: "./assets/user.png" },
     { name: "Finish, Rully, Reno", venue: "Kode", avatar: "./assets/user.png" },
     { name: "Devarra, Josiah", venue: "Kala", avatar: "./assets/devarrajos.png" },
@@ -54,21 +54,21 @@ const jadwalData = {
     { name: "Hizkia, WW", venue: "Cloud Lounge", avatar: "./assets/user.png" }
   ],
   '2025-09-19': [
-    { name: "Bukan WG", venue: "Blackowl Gading", avatar: "./assets/user.png" },
+    { name: "Bukan WG", venue: "Blackowl Gading", avatar: "./assets/bukanwg.png" },
     { name: "Jayjax & Liquid Silva", venue: "Blackowl Serpong", avatar: "./assets/user.png" },
     { name: "Essa Gobas", venue: "Ambyar Cikini", avatar: "./assets/user.png" },
-    { name: "Whisnu Santika", venue: "H Club", avatar: "./assets/user.png" },
+    { name: "Whisnu Santika", venue: "H Club", avatar: "./assets/whisnu.png" },
     { name: "Aloy, Nyxx, Sarah Ketaren", venue: "Lil Pik", avatar: "./assets/user.png" },
     { name: "Steve Chris, Your Future Husband", venue: "Tiger Kemang", avatar: "./assets/user.png" },
-    { name: "Bebi Romeo", venue: "Midaz", avatar: "./assets/user.png" },
-    { name: "Ianmusick", venue: "Delulu", avatar: "./assets/user.png" },
-    { name: "Noka Axl", venue: "Twofold", avatar: "./assets/user.png" },
+    { name: "Bebi Romeo", venue: "Midaz", avatar: "./assets/bebiromeo.png" },
+    { name: "Ianmusick", venue: "Delulu", avatar: "./assets/ianmusick.png" },
+    { name: "Noka Axl", venue: "Twofold", avatar: "./assets/noka.png" },
     { name: "Sandhy Sandoro", venue: "Lufre", avatar: "./assets/user.png" },
-    { name: "Bravy", venue: "Brotherhood", avatar: "./assets/user.png" },
+    { name: "Bravy", venue: "Brotherhood", avatar: "./assets/bravy.png" },
     { name: "Krevasse, Makimoeis", venue: "BOF", avatar: "./assets/user.png" },
     { name: "Prince K", venue: "Mantra", avatar: "./assets/user.png" },
     { name: "Remy Irwan", venue: "Kode", avatar: "./assets/user.png" },
-    { name: "Kaell", venue: "Lyn Pik", avatar: "./assets/user.png" },
+    { name: "Kaell", venue: "Lyn Pik", avatar: "./assets/kaell.png" },
     { name: "Syndromatic, RWN, Rongkie", venue: "AM Lounge", avatar: "./assets/user.png" },
     { name: "Evangelos, Brooky", venue: "Kala", avatar: "./assets/user.png" }
   ],
@@ -77,22 +77,22 @@ const jadwalData = {
     { name: "Patricia Schuldtz", venue: "H Social", avatar: "./assets/user.png" },
     { name: "Betsy Anastasia & Mela Garmela", venue: "Anthem", avatar: "./assets/user.png" },
     { name: "Morten", venue: "Noya", avatar: "./assets/user.png" },
-    { name: "Kuaci Records", venue: "Whiterabit Gatsu", avatar: "./assets/user.png" },
-    { name: "Sarah Ketaren", venue: "Mantra", avatar: "./assets/user.png" },
-    { name: "Herjunot Ali", venue: "Lavva", avatar: "./assets/user.png" },
-    { name: "Noka Axl, Omo Kucrut, Rey Limitless", venue: "Bengkel", avatar: "./assets/user.png" },
+    { name: "Kuaci Records", venue: "Whiterabit Gatsu", avatar: "./assets/kuaci.png" },
+    { name: "Sarah Ketaren", venue: "Mantra", avatar: "./assets/sarahketaren.png" },
+    { name: "Herjunot Ali", venue: "Lavva", avatar: "./assets/herjunot.png" },
+    { name: "Noka Axl, Omo Kucrut, Rey Limitless", venue: "Bengkel", avatar: "./assets/bengkel.png" },
     { name: "Pia D & Irish Nova", venue: "Kode", avatar: "./assets/user.png" },
     { name: "Cyda", venue: "Kala", avatar: "./assets/user.png" },
     { name: "Lenn", venue: "Lufre", avatar: "./assets/user.png" },
-    { name: "Wyntella", venue: "Camden Sunter", avatar: "./assets/user.png" },
-    { name: "Devarra", venue: "AM Lounge", avatar: "./assets/user.png" },
+    { name: "Wyntella", venue: "Camden Sunter", avatar: "./assets/wyntella.png" },
+    { name: "Devarra", venue: "AM Lounge", avatar: "./assets/devarra.png" },
     { name: "Techno Movement Asia", venue: "Kita Bar", avatar: "./assets/user.png" },
     { name: "Fadlie", venue: "Nineteen", avatar: "./assets/user.png" },
     { name: "Kimm", venue: "Midaz", avatar: "./assets/user.png" }
   ],
   '2025-09-21': [
     { name: "DNA & Tokio", venue: "Lil Qbig", avatar: "./assets/user.png" },
-    { name: "Alka Flow", venue: "Sparta", avatar: "./assets/user.png" },
+    { name: "Alka Flow", venue: "Sparta", avatar: "./assets/alkaflow.png" },
     { name: "Iara", venue: "Blackowl Serpong", avatar: "./assets/user.png" }
   ]
 };
@@ -216,6 +216,7 @@ function renderScheduleList(dateStr, page) {
 
     const pageInfo = document.createElement('span');
     pageInfo.textContent = `${page}/${totalPages}`;
+    pageInfo.style.fontWeight = '500';
 
     pagination.appendChild(prevBtn);
     pagination.appendChild(pageInfo);
