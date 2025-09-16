@@ -64,6 +64,48 @@ body {
 		width: 100%;
 		box-sizing: border-box;
 }
+/* .info-box {
+	max-width: 1200px;
+	width: 100%;
+	margin: 16px auto 0 auto;
+	background: linear-gradient(135deg, #4527a0 60%, #6a1b9a 100%);
+	box-shadow: 0 8px 40px 0 #0005, 0 1.5px 8px #6a1b9a44, 0 0 0 100vmax #4527a0ee inset;
+	background-blend-mode: normal;
+	border-radius: 18px;
+	padding: 18px 16px;
+	border: 2.5px solid #fff2;
+	color: #fff;
+}
+.info-box h3 {
+	margin: 0 0 12px 0;
+	font-size: 1.2em;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-shadow: 0 2px 12px #0005;
+}
+.info-links {
+	display: flex;
+	gap: 16px;
+	flex-wrap: wrap;
+}
+.info-links a {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 14px;
+	border-radius: 14px;
+	background: linear-gradient(135deg, #3949ab 40%, #8e24aa 100%);
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+	box-shadow: 0 3px 12px #0004, 0 0 8px #8e24aa55;
+	transition: all 0.25s ease;
+}
+.info-links a:hover {
+	background: linear-gradient(135deg, #8e24aa 40%, #3949ab 100%);
+	box-shadow: 0 6px 18px #8e24aa66;
+	transform: translateY(-1px);
+} */
 .credits {
 	margin-top: auto;
 	text-align: center;
@@ -102,6 +144,31 @@ body {
 	border: 2.5px solid #fff2;
 	/* unified spacing for weekdays and days grids */
 	--cal-gap: 6px;
+}
+.selected-display {
+	width: 100%;
+	margin-top: 14px;
+	padding: 18px 16px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.selected-display .selected-number {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 3.6em;
+	font-weight: 800;
+	line-height: 1;
+	color: #fff;
+	text-shadow: 0 3px 18px #0006;
+}
+.selected-display .selected-day-name {
+	margin-top: 6px;
+	font-size: 1.1em;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: #fff;
+	opacity: 0.95;
 }
 .header {
 	display: flex;
@@ -426,6 +493,10 @@ body {
     border-radius: 12px;
     min-height: auto;
   }
+  .info-box { padding: 12px 10px; border-radius: 12px; }
+  .selected-display { padding: 12px 10px; border-radius: 12px; }
+  .selected-display .selected-number { font-size: 2.6em; }
+  .selected-display .selected-day-name { font-size: 0.95em; }
   .header h2 {
     font-size: 1em;
   }

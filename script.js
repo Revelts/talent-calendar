@@ -5,6 +5,7 @@ const nextBtn = document.getElementById("next");
 const schedule = document.getElementById("schedule");
 const scheduleTitle = document.getElementById("schedule-title");
 const scheduleList = document.getElementById("schedule-list");
+const selectedDisplay = document.getElementById("selected-display");
 
 let date = new Date();
 
@@ -142,6 +143,7 @@ function renderCalendar() {
       document.querySelectorAll('.day.selected').forEach(el => el.classList.remove('selected'));
       this.classList.add('selected');
       const tgl = this.getAttribute('data-date');
+      updateSelectedDisplay(tgl);
       showSchedule(tgl);
     });
   });
@@ -165,6 +167,18 @@ function showSchedule(dateStr) {
   scheduleTitle.innerHTML = `Talent Schedule <br> ${tglStr}`;
 
   renderScheduleList(dateStr, currentPage);
+}
+
+function updateSelectedDisplay(dateStr) {
+  if (!selectedDisplay) return;
+  const hari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+  const [year, month, day] = dateStr.split('-');
+  const tglObj = new Date(Number(year), Number(month) - 1, Number(day));
+  const hariStr = hari[tglObj.getDay()];
+  selectedDisplay.innerHTML = `
+    <div class='selected-number'>${Number(day)}</div>
+    <div class='selected-day-name'>${hariStr}</div>
+  `;
 }
 
 function renderScheduleList(dateStr, page) {
@@ -241,3 +255,9 @@ nextBtn.addEventListener("click", () => {
 // Sembunyikan jadwal di awal
 schedule.style.display = 'none';
 renderCalendar();
+// Initialize selected display with today
+(function initSelectedToToday(){
+  const today = new Date();
+  const dateStr = `${today.getFullYear()}-${pad(today.getMonth()+1)}-${pad(today.getDate())}`;
+  updateSelectedDisplay(dateStr);
+})();
