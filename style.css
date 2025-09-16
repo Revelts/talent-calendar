@@ -458,9 +458,9 @@ body {
     font-size: 0.9em;
   }
   .day {
-    font-size: 0.9em;
+    font-size: 1.13em;
     padding: 0;
-    border-radius: 6px;
+    border-radius: 10px;
     aspect-ratio: 1 / 1;
   }
   .weekdays div {
@@ -468,6 +468,15 @@ body {
     padding: 4px 0;
     border-radius: 5px;
 	margin: 0;
+  }
+  .schedule h3 {
+	margin-top: 0;
+	margin-bottom: 18px;
+	font-size: 0.9em;
+	color: #fff;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-shadow: 0 2px 12px #0005;
   }
   body { overflow-y: auto; }
 }
