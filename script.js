@@ -92,7 +92,8 @@ const jadwalData = {
     { name: "Noka Axl", venue: "📍 FOS", avatar: "./assets/noka.png" },
     { name: "Alka Flow", venue: "📍 Sparta", avatar: "./assets/alkaflow.png" },
     { name: "Keebo", venue: "📍 Camden Cikini", avatar: "./assets/keebo.png" },
-    { name: "Kaell", venue: "📍 Bablas Kemang", avatar: "./assets/kaell.png" }
+    { name: "Kaell", venue: "📍 Bablas Kemang", avatar: "./assets/kaell.png" },
+    { name: "Secret Sunday Service", venue: "📍 Kita Bar", avatar: "./assets/kita.png" }
   ]
 };
 
