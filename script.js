@@ -11,89 +11,60 @@ let date = new Date();
 
 // Contoh data talent DJ
 const jadwalData = {
-  '2025-09-23': [
-    { name: "Putri Una", venue: "📍 Ambyar Mag", avatar: "./assets/putriuna.png" },
-    { name: "Yaya", venue: "📍 Helens Gunawarman", avatar: "./assets/yasmin.png" },
-    { name: "Verra V", venue: "📍 Lufre", avatar: "./assets/verrav.png" },
-    { name: "Breakin Bounce", venue: "📍 Mantra", avatar: "./assets/mantra.png" }
+  '2025-10-01': [
+    { name: "Techno Movement Asia", venue: "H CLUB", avatar: "./assets/hclub.png" }, // ada di jadwalData, ambil
+    { name: "Maskara", venue: "HELENS TJ DUREN", avatar: "./assets/helens.png" },
+    { name: "Pink Flamingo x JPS", venue: "TWOFOLD", avatar: "./assets/twofold.png" },
+    { name: "Erga", venue: "FOS", avatar: "./assets/erga.png" },
+    { name: "Wyntella", venue: "SPARTA", avatar: "./assets/wyntella.png" }, // ada di jadwalData (24), avatar → ./assets/blackowl.png
+    { name: "Lost & Found", venue: "KALA", avatar: "./assets/kala.png" },
+    { name: "Josiah & Mkhdfi", venue: "KODE", avatar: "./assets/josiah.png" }
   ],
-  '2025-09-24': [
-    { name: "Wyntella", venue: "📍 Blackowl PIK", avatar: "./assets/blackowl.png" },
-    { name: "Revive Vol 21", venue: "📍 Helens Epicentrum", avatar: "./assets/helens.png" },
-    { name: "For Revenge", venue: "📍 Livehouse Kemang", avatar: "./assets/livehouse.png" },
-    { name: "East Blake & HBRP", venue: "📍 Lavva", avatar: "./assets/lavva.png" },
-    { name: "Ada Band", venue: "📍 AM Lounge", avatar: "./assets/adaband.png" },
-    { name: "Noka Axl", venue: "📍 Mantra", avatar: "./assets/noka.png" },
-    { name: "Kimm, Fidello", venue: "📍 Kode", avatar: "./assets/kode.png" },
-    { name: "Syncopia", venue: "📍 Kala", avatar: "./assets/kala.png" },
-    { name: "Hizkia, Davva", venue: "📍 Encore", avatar: "./assets/encore.png" },
-    { name: "Kiith Live", venue: "📍 Nika", avatar: "./assets/kiith.png" }
+  '2025-10-02': [
+    { name: "Siva Aprilia", venue: "BLACKOWL PIK", avatar: "./assets/siva.png" },
+    { name: "Greytha", venue: "BLACKOWL GADING", avatar: "./assets/greytha.png" }, // ada di jadwalData 26, avatar ./assets/mantra.png
+    { name: "Ony", venue: "BLACKOWL SERPONG", avatar: "./assets/ony.png" },
+    { name: "Kangen Band", venue: "LIVEHOUSE KEMANG", avatar: "./assets/livehouse.png" },
+    { name: "Omo Kucrut", venue: "AMBYAR SENAYAN", avatar: "./assets/omokucrut.png" },
+    { name: "Whisnu Santika", venue: "H CLUB", avatar: "./assets/whisnu.png" }, // jadwalData venue beda → tapi ada avatar
+    { name: "Josiah, Alter Ego, Noka Axl", venue: "FOS", avatar: "./assets/fos.png" },
+    { name: "Davva & Jiggy", venue: "KALA", avatar: "./assets/kala.png" },
+    { name: "Tantra", venue: "KODE", avatar: "./assets/kode.png" },
+    { name: "Candyflip, Osso, Finish", venue: "AM LOUNGE", avatar: "./assets/amlounge.png" },
+    { name: "Batara & Junior Ori", venue: "PELAGA LOUNGE", avatar: "./assets/pelaga.png" }
   ],
-  '2025-09-25': [
-    { name: "Bobby Suryadi", venue: "📍 Blackowl PIK", avatar: "./assets/blackowl.png" },
-    { name: "Noka Axl", venue: "📍 Blackowl Gading", avatar: "./assets/noka.png" },
-    { name: "Barasuara & Nadhif", venue: "📍 Bengkel", avatar: "./assets/bengkel.png" },
-    { name: "Bull", venue: "📍 Lil Tiger PIK", avatar: "./assets/liltiger.png" },
-    { name: "Yaya", venue: "📍 Livehouse Gading", avatar: "./assets/yasmin.png" },
-    { name: "Winky Wiryawan", venue: "📍 Helens Gunawarman", avatar: "./assets/helens.png" },
-    { name: "Omo Kucrut", venue: "📍 Livehouse Qbig", avatar: "./assets/omokucrut.png" },
-    { name: "Ghea Indrawari", venue: "📍 Noya", avatar: "./assets/noya.png" },
-    { name: "Arsyih Idrak", venue: "📍 Brotherhood", avatar: "./assets/arsyih.png" },
-    { name: "Echobee", venue: "📍 Zoo", avatar: "./assets/zoo.png" },
-    { name: "Bravy", venue: "📍 Delulu", avatar: "./assets/bravy.png" },
-    { name: "Josiah", venue: "📍 Kala", avatar: "./assets/kala.png" },
-    { name: "Naughty Grooves", venue: "📍 Kode", avatar: "./assets/kode.png" },
-    { name: "Kaell", venue: "📍 AM Lounge", avatar: "./assets/amlounge.png" },
-    { name: "Alkimia", venue: "📍 BOF", avatar: "./assets/bof.png" },
-    { name: "Dipha Barus", venue: "📍 The Great Gatsby", avatar: "./assets/dipha.png" },
-    { name: "Techno Movement Asia", venue: "📍 Twofold", avatar: "./assets/twofold.png" },
-    { name: "Batara, Wedatron, 39 Degrees", venue: "📍 Pelaga Lounge", avatar: "./assets/batara.png" },
-    { name: "Kiith Live", venue: "📍 Fifty Six", avatar: "./assets/kiith.png" },
-    { name: "Ajun Perwira", venue: "📍 Black Angel", avatar: "./assets/blackangel.png" }
+  '2025-10-03': [
+    { name: "Marlo", venue: "BLACKOWL PIK", avatar: "./assets/blackowl.png" },
+    { name: "Putri Una", venue: "BLACKOWL SERPONG", avatar: "./assets/putriuna.png" },
+    { name: "Sumbermakmurpalsu", venue: "NU CHINA", avatar: "./assets/nuchina.png" },
+    { name: "Fidello & Hizkia", venue: "KALA", avatar: "./assets/kala.png" },
+    { name: "Naro", venue: "AM LOUNGE", avatar: "./assets/amlounge.png" },
+    { name: "Cyda", venue: "KODE", avatar: "./assets/kode.png" },
+    { name: "LTN, Hime, Theo, Shiva", venue: "ENCORE", avatar: "./assets/encore.png" },
+    { name: "Clubhoppers", venue: "TWOFOLD", avatar: "./assets/twofold.png" },
+    { name: "Riina & Five Force", venue: "CHAOCHAO", avatar: "./assets/chaochao.png" },
+    { name: "Hardbassbash", venue: "KRAPELA", avatar: "./assets/krapella.png" },
+    { name: "Keyla", venue: "LUFRE", avatar: "./assets/lufre.png" },
+    { name: "For Revenge", venue: "BBK", avatar: "./assets/bbk.png" } // fallback ke livehouse
   ],
-  '2025-09-26': [
-    { name: "Adnan Veron", venue: "📍 Blackowl Gading", avatar: "./assets/adnanveron.png" },
-    { name: "Nathalie Adelia", venue: "📍 Blackowl PIK", avatar: "./assets/blackowl.png" },
-    { name: "Ungu Band", venue: "📍 Blackowl Serpong", avatar: "./assets/blackowl.png" },
-    { name: "Trilogy", venue: "📍 Bengkel", avatar: "./assets/bengkel.png" },
-    { name: "Whisnu Santika", venue: "📍 Tiger Kemang", avatar: "./assets/goldentiger.png" },
-    { name: "Sick Individuals", venue: "📍 H Club", avatar: "./assets/hclub.png" },
-    { name: "Tujamo", venue: "📍 Noya", avatar: "./assets/tujamo.png" },
-    { name: "Noka Axl", venue: "📍 Twofold", avatar: "./assets/noka.png" },
-    { name: "Alka Flow", venue: "📍 Sparta", avatar: "./assets/alkaflow.png" },
-    { name: "Greytha", venue: "📍 Mantra", avatar: "./assets/mantra.png" },
-    { name: "Devarra", venue: "📍 ChaoChao", avatar: "./assets/devarra.png" },
-    { name: "Ianmusick", venue: "📍 Nu China", avatar: "./assets/ianmusick.png" },
-    { name: "Alter Ego", venue: "📍 Kala", avatar: "./assets/kala.png" },
-    { name: "Shammui", venue: "📍 Kode", avatar: "./assets/kode.png" },
-    { name: "Clubhoppers & Triple Decker", venue: "📍 AM Lounge", avatar: "./assets/amlounge.png" }
+  '2025-10-04': [
+    { name: "WW", venue: "BLACKOWL PIK", avatar: "./assets/blackowl.png" },
+    { name: "Kienzy", venue: "BLACKOWL GADING", avatar: "./assets/blackowl.png" },
+    { name: "Nathalie Adelia", venue: "BLACKOWL SERPONG", avatar: "./assets/blackowl.png" },
+    { name: "Maskara & Ava", venue: "BENGKEL", avatar: "./assets/bengkel.png" },
+    { name: "Alka Flow", venue: "FOS", avatar: "./assets/alkaflow.png" },
+    { name: "Lusso", venue: "NOYA", avatar: "./assets/noya.png" },
+    { name: "Sarah Ketaren", venue: "MANTRA", avatar: "./assets/sarahketaren.png" },
+    { name: "Kuaci Records", venue: "WHITERABIT GATSU", avatar: "./assets/kuaci.png" },
+    { name: "Levin & Iris Nova", venue: "KALA", avatar: "./assets/kala.png" },
+    { name: "Mossigo & Nawing", venue: "KODE", avatar: "./assets/kode.png" },
+    { name: "Wyntella", venue: "BOF", avatar: "./assets/wyntella.png" },
+    { name: "Indonesia Local Heroes", venue: "KITA BAR", avatar: "./assets/kita.png" },
+    { name: "Yoga Sastra", venue: "NU CHINA", avatar: "./assets/yoga.png" }
   ],
-  '2025-09-27': [
-    { name: "Misslee", venue: "📍 Blackowl PIK", avatar: "./assets/blackowl.png" },
-    { name: "Maretta", venue: "📍 Blackowl Serpong", avatar: "./assets/blackowl.png" },
-    { name: "Berlin & Derina Derin", venue: "📍 Bengkel", avatar: "./assets/bengkel.png" },
-    { name: "Duckhead", venue: "📍 Fyne", avatar: "./assets/duckhead.png" },
-    { name: "Alka Flow", venue: "📍 FOS", avatar: "./assets/alkaflow.png" },
-    { name: "Egnever", venue: "📍 LTX SCBD", avatar: "./assets/egnever.png" },
-    { name: "Herjunot Ali & Bobby Suryadi", venue: "📍 Lavva", avatar: "./assets/lavva.png" },
-    { name: "YB (Arap)", venue: "📍 Alexa", avatar: "./assets/yb.png" },
-    { name: "Steve Levi", venue: "📍 AM Lounge", avatar: "./assets/amlounge.png" },
-    { name: "Kuaci Records", venue: "📍 Whiterabit Gatsu", avatar: "./assets/kuaci.png" },
-    { name: "P Joana", venue: "📍 Lufre", avatar: "./assets/lufre.png" },
-    { name: "Cyda, Davva, Oggie", venue: "📍 Noru", avatar: "./assets/noru.png" },
-    { name: "Ris", venue: "📍 Midaz", avatar: "./assets/midaz.png" },
-    { name: "Alter Ego", venue: "📍 Amethys", avatar: "./assets/alterego.png" },
-    { name: "Arief Ayip", venue: "📍 Kode", avatar: "./assets/kode.png" },
-    { name: "Robin Moeller & Pia D", venue: "📍 Kala", avatar: "./assets/kala.png" },
-    { name: "B455", venue: "📍 Brotherhood", avatar: "./assets/bhg.png" },
-    { name: "Yoga Sastra", venue: "📍 Nu China", avatar: "./assets/yoga.png" }
-  ],
-  '2025-09-28': [
-    { name: "Noka Axl", venue: "📍 FOS", avatar: "./assets/noka.png" },
-    { name: "Alka Flow", venue: "📍 Sparta", avatar: "./assets/alkaflow.png" },
-    { name: "Keebo", venue: "📍 Camden Cikini", avatar: "./assets/keebo.png" },
-    { name: "Kaell", venue: "📍 Bablas Kemang", avatar: "./assets/kaell.png" },
-    { name: "Secret Sunday Service", venue: "📍 Kita Bar", avatar: "./assets/kita.png" }
+  '2025-10-05': [
+    { name: "Alka Flow", venue: "FYNE", avatar: "./assets/alkaflow.png" },
+    { name: "Kaell", venue: "IZZY", avatar: "./assets/kaell.png" }
   ]
 };
 
@@ -196,12 +167,19 @@ function renderScheduleList(dateStr, page) {
     const div = document.createElement('div');
     div.className = 'talent-item';
     div.innerHTML = `
-      <img class='talent-avatar' src='${talent.avatar}' alt='${talent.name}'>
+      <img class='talent-avatar' alt='${talent.name}'>
       <div class='talent-info'>
         <div class='talent-name'>${talent.name}</div>
         <div class='talent-venue'>${talent.venue}</div>
       </div>
     `;
+    const imgEl = div.querySelector('.talent-avatar');
+    const avatarSrc = talent.avatar || null;
+    if (avatarSrc) {
+      imgEl.setAttribute('src', avatarSrc);
+    } else {
+      imgEl.removeAttribute('src');
+    }
     scheduleList.appendChild(div);
   });
 
